@@ -1,0 +1,146 @@
+body {
+  font-family: Georgia, serif; 
+  margin: 0;
+  padding: 0;
+  background: #4b0f1c; 
+  color: #f7e7ce; 
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+}
+
+p {
+  font-style: italic;
+}
+
+nav {
+  background-color: #4b0f1c;
+  border-bottom: 2px solid gold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li a {
+  color: silver;
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #f7e7ce;
+}
+
+.hero-about, .hero-hobbies {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: silver;
+  text-shadow: 2px 2px 6px black;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero-about {
+  background-image: url('https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/774b2c93bbc773ef863e51162b5c32f50bc03ee1/aa476672c7f3a5a3835bd5fc86823387.jpg');
+}
+
+.hero-about::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 0;
+}
+
+.hero-about h1 {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hero-hobbies {
+  background-image: url('https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/774b2c93bbc773ef863e51162b5c32f50bc03ee1/607e3a6d49574e214e11e91b6578cc44.jpg');
+}
+
+.hero-hobbies::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero-hobbies h1 {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  padding: 30px 20px;
+}
+
+.box {
+  border: 2px solid gold;
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 700px;
+  border-radius: 15px;
+  text-align: center;
+  background: rgba(255,215,0,0.05);
+  transition: 0.4s;
+}
+
+.box p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.box img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
+
+.box.active {
+  background: linear-gradient(145deg, rgba(163, 74, 90, 0.5), rgba(43, 10, 18, 0.8));
+  color: #f7e7ce;
+  border: 2px solid gold;
+  box-shadow: 0 0 30px rgba(201, 162, 39, 0.6);
+  transform: scale(1.05);
+}
+
+
+footer {
+  text-align: center;
+  background-color: #4b0f1c;
+  color: silver;
+  padding: 10px 0;
+  border-top: 2px solid gold;
+}
