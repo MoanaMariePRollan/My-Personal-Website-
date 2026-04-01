@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-hobbies">
+    <h1>MY HOBBIES</h1>
+  </section>
+
+  <section class="content">
+
+    <div class="box">
+      <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/58e7137a97831e3792ead112bffa270bd28ffc3f/e8b009bc9ce109396134d4ecd68e9ff3.jpg">
+      <p>I enjoy playing mobile games like Mobile Legends and Call of Duty because they are fun, challenging, and let me test my skills and strategy. Gaming helps me think quickly, solve problems, and improve my focus. I love the excitement of competing, working as a team, and exploring new in-game worlds. For me, gaming isn’t just a hobby it’s an adventure that keeps me engaged and always wanting to improve.</p>
+    
+    </div>
+
+    <div class="box">
+      <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/9fde6ad609871cbf5c1575b8ef3227c9cf10fe47/0102db28acb866dc35711d7f35021280.jpg" alt="Image">
+      <p>I really enjoy reading manhwa, especially BL stories, because it’s my way to relax and escape from everything that stresses me out. Whenever I pick up a story, all the problems and worries I had earlier seem to disappear, and I get completely absorbed in the characters’ lives and adventures. Reading allows me to explore different emotions, imagine new worlds, and just enjoy a little peace in my day. It’s more than a hobby, it’s my little sanctuary where I can forget my stress, recharge, and feel happy again.</p>
+    
+    </div>
+
+
+<div class="box"> 
+<img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/8d324d64b0e8fe58429769b64707599e2a763e2a/b2d751501bc7e5f25a5f7d99516df84c.jpg" alt="Image">
+<p>One of my favorite hobbies is playing badminton. I love the fast pace and the challenge of aiming for precise shots. I usually play with my friends or my siblings, and it’s always so much fun laughing and competing together. I even once joined our intramurals, which was such an exciting experience that pushed me to play my best on the court.</p>
+  </div>
+
+
+    <div class="box">
+      <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/58e7137a97831e3792ead112bffa270bd28ffc3f/f151b622be0a31ce27212c30547ed6d4.jpg">
+      <p>I enjoy listening to music because it helps me relax, focus, and feel inspired. Music has a way of lifting my mood, letting me escape from stress, and even sparking new ideas. I love discovering new songs and artists, and immersing myself in different genres that match how I feel. Whether it is an upbeat track that energizes me or a calm melody that helps me unwind, music is always there to keep me motivated, entertained, and connected to my emotions. It is more than just a hobby, it is a part of my daily life that brings joy and inspiration to every moment.</p>
+    
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 MOANA MARIE P ROLLAN</p>
+  </footer>
+
+  <script>
+
+    document.querySelectorAll('.content img').forEach(img => {
+      img.addEventListener('click', () => {
+        alert("This is one of my hobbies!");
+      });
+    });
+
+    const boxes = document.querySelectorAll(".box");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      boxes.forEach(box => {
+        const top = box.offsetTop - 300;
+        const height = box.offsetHeight;
+
+        if (scrollY >= top && scrollY < top + height) {
+          box.classList.add("active");
+        } else {
+          box.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html
