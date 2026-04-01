@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="hero-about">
+    <h1>WELCOME TO MY PERSONAL WEBPAGE</h1>
+  </section>
+
+
+  <section class="content">
+
+    <div class="box">
+            <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/58e7137a97831e3792ead112bffa270bd28ffc3f/IMG_20260320_174005_852.jpg">
+      <p>Hello, world! I’m Moana Marie P. Rollan, but you can call me Mon. I’m 17 years old, turning 18 this month on the 23rd, and I’m on a mission to turn my dreams into reality.
+From the moment I discovered my love for fashion, I knew exactly what I wanted to become a fashion designer and one day make it big in the global fashion industry. Fashion isn’t just what I do it’s who I am. Every sketch, every design, every stitch is a piece of my heart and imagination, and I want my creations to inspire, empower, and leave a mark wherever they go.
+But my ambitions go beyond the runway or the spotlight. My dreams are deeply connected to my family. I want to make my parents proud, to show them that all the love, support, and sacrifices they’ve given me were never wasted. I hope to support them, lift them up, and give them the life they deserve, while chasing my goals with courage and determination. Their happiness fuels my ambition, and every step I take is for them as much as it is for me.
+I’m determined, focused, and unstoppable. I plan, I learn, I create, and I grow every single day, knowing that the road to success is never easy but it’s always worth it. My dream isn’t just to make beautiful clothes; it’s to craft a legacy, build opportunities, and inspire others to chase their own dreams fearlessly.
+In short, I’m a dreamer, a creator, and a believer in big ambitions. I’m ready to shine in the fashion industry, leave my mark on the world, and honor my family with every step I take. Fashion is my passion, my drive, and my story, and this is just the beginning.</p>
+    </div>
+
+    <div class="box">
+   <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/ca4cbf371e2685cfb641e0fe6f8807eee7ee5c25/6fd9e7bfb58c53b5ce957770319a72c3.jpg" alt="Website Image">
+      <p>My favorite food is buldak because I absolutely love its fiery, spicy kick that instantly wakes up my taste buds. Every bite is packed with bold flavors that are both savory and slightly sweet, making it super satisfying. I also love the chewy, tender texture of the chicken—it makes eating it so much fun. Buldak isn’t just food to me; it’s a little adventure in every bite that keeps me coming back for more.</p>
+    </div>
+
+    <div class="box">
+    <img src="https://raw.githubusercontent.com/MoanaMariePRollan/My-Personal-Website-/ca4cbf371e2685cfb641e0fe6f8807eee7ee5c25/74cf2bda7b7e1b91fbf6870f5b1645ba.jpg" alt="Personal Website Image">
+     <p>My favorite color is burgundy because it feels rich, bold, and full of character. I love how it’s deep and sophisticated, yet warm and inviting at the same time. Burgundy is strong but elegant, just like the vibe I want to carry in everything I do, making it more than just a color, it’s a statement.</p>
+    </div>
+
+  </section>
+
+
+  <footer>
+    <p>&copy; 2026 MOANA MARIE P ROLLAN</p>
+  </footer>
+
+  <script>
+  
+    document.querySelector('.hero-about h1').addEventListener('click', function() {
+      this.style.color = "gold";
+    });
+
+  
+    const boxes = document.querySelectorAll(".box");
+
+    window.addEventListener("scroll", () => {
+      let scrollY = window.pageYOffset;
+
+      boxes.forEach(box => {
+        const top = box.offsetTop - 300;
+        const height = box.offsetHeight;
+
+        if (scrollY >= top && scrollY < top + height) {
+          box.classList.add("active");
+        } else {
+          box.classList.remove("active");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
